@@ -1,18 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Feb 20 17:57:48 2020
-
-@author: Anmol
-"""
-"""
-function addhttp($url) {
-    if (!preg_match("~^(?:f|ht)tps?://~i", $url)) {
-        $url = "http://" . $url;
-    }
-    return $url;
-}
-"""
-
 import importlib
 #google = importlib.import_module('/usr/local/lib/python2.7/site-packages/google/__init__.py')
 from googlesearch import search
