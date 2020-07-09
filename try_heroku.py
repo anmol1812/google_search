@@ -11,6 +11,10 @@ from urllib.request import Request, urlopen
 
 app = Flask(__name__)
 
+@app.route('/')
+def home():
+    return render_template('index.html')
+
 @app.route('/google_search', methods=['POST'])
 def gui_ans():
     if request.method == 'POST':
