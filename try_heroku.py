@@ -1,7 +1,7 @@
 import importlib
 #google = importlib.import_module('/usr/local/lib/python2.7/site-packages/google/__init__.py')
 from googlesearch import search
-from flask import Flask, request, redirect, url_for, flash, jsonify, Response
+from flask import Flask, request, redirect, url_for, flash, jsonify, Response, render_template
 import json
 import os
 import flask
@@ -37,7 +37,8 @@ def gui_ans():
         print(" ")
         i += 1
             
-    return a
+    #return a
+    return render_template('index.html', result = a)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
