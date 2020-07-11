@@ -16,10 +16,10 @@ def home():
     return render_template('index.html')
 
 @app.route('/static', methods=['POST'])
-def gui_ans():
+def static():
     #if request.method == 'POST':
         #query = request.args.get('query')
-    query = request.form.values('')
+    query = request.form.values()
     def google_scrape(url):
         page = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
         thepage = urlopen(page).read()
