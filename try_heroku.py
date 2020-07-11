@@ -15,7 +15,7 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
-@app.route('/search', methods=['POST'])
+@app.route('/static', methods=['POST'])
 def gui_ans():
     #if request.method == 'POST':
         #query = request.args.get('query')
