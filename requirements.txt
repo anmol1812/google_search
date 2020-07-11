@@ -9,4 +9,12 @@ scipy>=0.15.1
 scikit-learn>=0.18
 matplotlib>=1.4.3
 pandas>=0.19
-
+google==2.0.3
+google-api-core==1.16.0
+google-api-python-client==1.7.11
+google-auth==1.11.0
+google-auth-httplib2==0.0.3
+google-auth-oauthlib==0.4.1 
+google-pasta==0.1.8 
+google-search-results==1.7.1
+googleapis-common-protos==1.51.0
